@@ -7,8 +7,118 @@ body{
 li{
     list-style: none;
 }
-/*headerFirst*/
+/*scrollbar common css */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #FFAB01;
+    width: 5px;
+    padding: 5px;
+    border-radius: 15px;
+  }
 
+/*chatbot*/
+.chatBot{
+    position: fixed; 
+    bottom: -19px;
+    z-index: 10;
+    right: 119px;
+    max-width: 312px;
+    width: auto;
+    min-height: 117px;
+    transition:  2s;
+    background-color: transparent;
+    z-index: 999999999;
+
+}
+.boxToggle{
+    position: relative;
+    transition-timing-function: ease;
+    transition:  2s;
+}
+.floatIcons{
+    display: flex;
+    gap: 20px;
+}
+.cbWrap{
+    display: flex;
+    padding: 20px;
+    min-height: 117px;
+    transition:  2s;
+    padding-left: 0;
+    min-width: 200px;
+    transition-timing-function: ease;
+    transition:  2s;
+    transition-timing-function: ease;
+    float: right;
+    padding-right: 0;
+    width: auto;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 25%);
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+.chatBotBox{
+    position: absolute;
+    top: -115px;
+    left: 0;
+    transition-timing-function: ease;
+    transition:  2s;
+    right: 44px;
+}
+.closeChat{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    right: -10px;
+    transition-timing-function: ease;
+    transition:  2s;
+    top: -21px;
+}
+.expandBoxes{
+    /* max-width: 300px;
+    color: #fff;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #12b47d;
+    border-radius: 4px;
+    margin: 20px;
+    flex: auto; */
+    position: absolute;
+    display: block;
+}
+.float-wtsapp .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-wtsapp .my-float{
+	margin-top:16px;
+}
+/*headerFirst*/
+.d-none-desk{
+    display: none !important;
+}
 
 .headerFirstWrap{
     height: 41px;
@@ -54,6 +164,51 @@ color: #131313;
 font-family: 'Merriweather', serif;
 }
 /* home */
+.itemBanner{
+    background: linear-gradient(90deg, #555C66 8.06%, rgba(70, 77, 87, 0.63) 41.31%, rgba(85, 92, 102, 0) 73.33%), url("../images/ca.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 73vh;
+    align-items: center;
+    display: flex;
+
+    
+}
+.enquiry{
+    border: none;
+    outline: none;
+    background: #FFAB01;
+border-radius: 5px;
+height: 52px;
+width: 205px;
+
+font-family: "Merriweather";
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.enquiryWrap{
+    display: flex;
+    justify-content: center;
+    width: 584px;
+    text-align: center;
+    align-items: center;
+}
+.itemBanner .bannerText{
+    font-size: 38px;
+line-height: 137%;
+text-align: center;
+width: 584px;
+font-weight: 700;
+color: #FFFFFF;
+font-family: "Merriweather", sans-serif;
+}
 .home .owl-theme .owl-dots {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
@@ -61,7 +216,7 @@ font-family: 'Merriweather', serif;
     left: 0;
     right: 0;
     margin-left: auto;
-    bottom: 16px;
+    bottom: 80px;
     margin-right: auto;
     width: 100px;
 }
@@ -74,6 +229,7 @@ font-family: 'Merriweather', serif;
 
 .aboutWrap{
     padding-top: 60px;
+    padding-bottom: 52px;
 }
 .aboutUs .row{
     gap: 96px;
@@ -88,6 +244,7 @@ padding-bottom: 5px;
 padding-top: 67px;
 border-bottom: 3px solid #FFAB01;
 width: 170px;
+text-align: center;
 color: #131313;
 }
 .detailAbt{
@@ -117,6 +274,7 @@ font-weight: normal;
 font-size: 38px;
 padding-bottom: 5px;
 width: 384px;
+text-align: center;
 padding-top: 0px;
 margin: 0px;
 border-bottom: 3px solid #FFAB01;
@@ -138,3 +296,199 @@ color: #555555;
 
 opacity: 0.8;
 }
+.company{
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.company .headingCompany{
+    font-family: "Merriweather", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 38px;
+padding-bottom: 5px;
+width: 346px;
+text-align: center;
+padding-top: 0px;
+margin: 0px;
+border-bottom: 3px solid #FFAB01;
+line-height: 48px;
+color: #131313;
+}
+.companyBody{
+    padding-top: 63px;
+   
+}
+.bodyStart{
+    display: flex;
+    gap: 50px;
+}
+.companyBox1{ 
+background: #555C66;
+border-radius: 4px;
+padding: 31px;
+}
+.companyBox1 .sec1{
+    font-family: "Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+
+color: #FFFFFF;
+
+opacity: 0.8;
+}
+.team{
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.team .headingTeam{
+    font-family: "Merriweather", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 38px;
+padding-right: 10px;
+padding-left: 10px;
+padding-bottom: 5px;
+width: 210px;
+text-align: center;
+padding-top: 0px;
+margin: 0px;
+border-bottom: 3px solid #FFAB01;
+line-height: 48px;
+color: #131313;
+}
+.team .teamBody{
+    display: flex;
+    gap: 20px;
+    padding-top: 56px;
+}
+.team .teamBodySec1{
+    display: flex;
+    flex-direction: column;
+}
+.team .teamBodySec1 .sec2 .name{
+    
+font-family: "Lato";
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 150%;
+/* identical to box height, or 42px */
+
+
+color: #555555;
+
+opacity: 0.8;
+}
+.team .teamBodySec1 .sec2 .des{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+    
+    
+    color: #555555;
+    
+    opacity: 0.8;
+    }
+    .team .teamBodySec1 .sec2 .body{
+    
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 27px */
+        
+        
+        color: #555555;
+        
+        opacity: 0.8;
+        }
+
+
+        /*footer*/
+        .footerWrap{
+            background: #555C66;
+            margin-top: 20px;
+            width: 100%;
+            padding-bottom: 62px;
+        }
+        .fstart{
+            display: flex;
+            gap: 55px;
+        }
+        .fs1{
+ padding-top: 51px;
+        }
+        .fs1 .aboutText{
+            font-family: "Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+        }
+        .fbwrap{
+            display: flex;
+            flex-direction: column;
+        }
+        .fs1 .title{
+            font-family: "Lato";
+            padding-top: 22px;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+
+color: #C7C6C6;
+        }
+        .fs1 .followUs{
+            font-family: "Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #FFFFFF;
+line-height: 24px;
+padding-top: 3px;
+        }
+.fs1 .copyright{
+    font-family: "Lato";
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 150%;
+/* identical to box height, or 19px */
+padding-top: 20px;
+
+color: #FFFFFF;
+
+opacity: 0.47;
+}
+.fs1 .searchBarWrap{
+    padding-top: 54px;
+}
+.fs1 .searchBar{
+    width: 250px;
+    background-color: #FFFFFF !important;
+    box-shadow: 2px 4px 15px #444C56 !important;
+}
+.social-links{
+    display: flex;
+    gap: 17px;
+}
+
+
+
+
+

@@ -1,0 +1,227 @@
+@media screen and (max-width:1200px) { 
+    .searchBarWrap .searchBar {
+        width: 325px;
+    }
+    .aboutUs .row{
+        gap: 162px;
+    }
+    .headingAbt{
+        padding-top: 23px;
+    }
+    .bodyStart{
+        flex-wrap: wrap;
+    justify-content: center;
+    }
+ 
+}
+@media screen and (max-width:1100px) { 
+   .team .teamBody{
+        flex-wrap: wrap;
+        grid-gap: 122px;
+        justify-content: center;
+    }
+    .teamImg{
+        width: 239px;
+    }
+    .teamBodySec1 .sec2{
+        width: 239px;
+    }
+}
+@media screen and (max-width:999px) { 
+  .d-none-mob{
+      display: none;
+  }
+  .d-none-desk{
+    display: block !important;
+}
+.mobNav{
+    /* display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    padding-right: 20px; */
+}
+.logoMobBlk{
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+}
+.wrapNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+}
+.logoMobBlk img{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.navbarMobWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding-left: 40px;
+}
+.nav-menu.active{
+    background: #FFFFFF;
+    /* box-shadow: 0 0 0 10000px #666666; */
+    right: 0 !important;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999999999999999;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    transition: 0.5s;
+    overflow-y: hidden;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.iconClose{
+    width: 13px;
+    height: 10px;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column!important;
+    width: 80%;
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    right: -100% !important;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.closeWrapNav{
+   
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 70px;
+
+}
+.modal-open{
+    position: fixed;
+}
+.overlay-nav {
+    position: fixed;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: 9999;
+}
+.itemBanner .bannerText , .itemBanner .enquiryWrap{
+    width: auto;
+}
+.aboutImg{
+    display: flex;
+    justify-content: center;
+}
+}
+@media screen and (max-width:780px) {
+   .mob-footer{
+       display: flex;
+       justify-content: center;
+   }
+   .mob-footer .fs1 .searchBarWrap{
+       padding-top: 20px;
+   }
+   .navbarMobWrap{
+       padding-left: 0px;
+   }
+} 
+@media screen and (max-width:540px) {
+    .detailAbt, .vission .detailVission{
+        font-size: 15px;
+    }
+    .home{
+        overflow-x: hidden;
+    }
+    .headingAbt {
+        font-size: 30px;
+        width: 138px;
+    }
+    .vission .headingVission{
+        font-size: 30px;
+        width: 297px; 
+    }
+    .itemBanner .bannerText {
+        font-size: 30px;
+    }
+    .enquiry{
+        height: 46px;
+        width: 172px;
+    }
+    .mob-footer{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .fs1 .copyright, .fs1 .followUs{
+        text-align: center;
+
+    }
+    .fs1 .followUs{
+        padding-top: 40px;
+    }
+    .fs1 .aboutText{
+        font-size: 14px;
+        text-align: center;
+    }
+    .social-links{
+        justify-content: center;
+    }
+    .fs1 .title{
+        text-align: center;
+    }
+    .aboutUs .row {
+        grid-gap: 162px;
+        gap: 35px;
+    }
+  
+} 
+@media screen and (max-width:475px) { 
+    .wrapNav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .searchBarWrap .searchBar{
+        margin-left: 45px;
+    }
+    .companyBox1 .sec1{
+        font-size: 15px;
+    }
+    .logoMobBlk .logo {
+        width: 94px;
+    }
+    .itemBanner{
+        height: 62vh;
+    }
+    .itemBanner .bannerText {
+        font-size: 23px;
+    }
+    .enquiry {
+        height: 38px;
+        width: 151px;
+        font-size: 14px;
+    }
+    .headingAbt, .vission .headingVission, .company .headingCompany, .team .headingTeam {
+        font-size: 24px;
+        padding-bottom: 0px;
+    }
+    .company .headingCompany{
+        width: 230px;
+    }
+    .closeWrapNav{
+        padding-right: 35px;
+    }
+}
+@media screen and (max-width: 375px){
+    .searchBarWrap .searchBar {
+    margin-left: 24px;
+}
+}
