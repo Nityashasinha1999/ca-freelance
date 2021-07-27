@@ -1,7 +1,8 @@
 /** @format */
 
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import { Navbar, NavItem, NavLink, Input, Container } from "reactstrap";
+import { NavLink, Link } from "react-router-dom";
+import { Navbar, NavItem, Input, Container } from "reactstrap";
 import openIcon from "../assets/images/icons/hamburger.png";
 import logo from "../assets/images/logo.png";
 import close from "../assets/images/icons/close.svg";
@@ -14,6 +15,10 @@ const Header = (props) => {
     if (ref.current) {
       setSticky(ref.current.getBoundingClientRect().top <= 0);
     }
+  };
+  const [active, setActive] = useState(false);
+  const toggleActive = () => {
+    setActive(!active);
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -47,22 +52,38 @@ const Header = (props) => {
             </div>
             <div className='navFlex'>
               <NavItem>
-                <NavLink className='headerLink active' href='/'>
+                <NavLink
+                  exact
+                  to='/'
+                  className='headerLink'
+                  activeClassName='active'>
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className='headerLink' href='/'>
+                <NavLink
+                  exact
+                  to='/work'
+                  className='headerLink'
+                  activeClassName='active'>
                   Works
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className='headerLink' href='/'>
+                <NavLink
+                  exact
+                  to='/gallery'
+                  className='headerLink'
+                  activeClassName='active'>
                   Gallery
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className='headerLink' href='/'>
+                <NavLink
+                  exact
+                  to='/login'
+                  className='headerLink'
+                  activeClassName='active'>
                   Contact Us
                 </NavLink>
               </NavItem>
@@ -70,9 +91,11 @@ const Header = (props) => {
           </Container>
         </Navbar>
       </div>
-      <div className='d-none-desk'>
+      <div
+        className={`d-none-desk sticky-wrapper${isSticky ? " sticky" : ""}`}
+        ref={ref}>
         <div className='mobNav'>
-          <div onClick={toggle} className='wrapNav'>
+          <div className='wrapNav'>
             <div className='logoMobBlk'>
               <NavItem href='/'>
                 <img src={logo} alt='logo' className='logo' />
@@ -84,11 +107,13 @@ const Header = (props) => {
             <img
               src={openIcon}
               alt='nav'
+              onClick={toggle}
               className={isOpen ? "d-none ham" : "d-block"}
             />
             <img
               src={close}
               alt='nav'
+              onClick={toggle}
               className={!isOpen ? "d-none ham" : "d-block"}
             />
           </div>
@@ -109,22 +134,38 @@ const Header = (props) => {
                 <Fade left>
                   <div className='navbarMobWrap'>
                     <NavItem>
-                      <NavLink className='headerLink' href='/'>
+                      <NavLink
+                        exact
+                        to='/'
+                        className='headerLink'
+                        activeClassName='active'>
                         Home
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink className='headerLink' href='/'>
+                      <NavLink
+                        exact
+                        to='/work'
+                        className='headerLink'
+                        activeClassName='active'>
                         Works
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink className='headerLink' href='/'>
+                      <NavLink
+                        exact
+                        to='/gallery'
+                        className='headerLink'
+                        activeClassName='active'>
                         Gallery
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink className='headerLink' href='/'>
+                      <NavLink
+                        exact
+                        to='/login'
+                        className='headerLink'
+                        activeClassName='active'>
                         Contact Us
                       </NavLink>
                     </NavItem>

@@ -11,6 +11,9 @@ p{
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 /*scrollbar common css */
 ::-webkit-scrollbar {
     width: 6px;
@@ -178,7 +181,7 @@ li{
 }
 .navFlex{
     display: flex;
-    justify-content: space-between
+gap: 30px;
 }
 .headerLink{
     font-size: 16px;
@@ -557,6 +560,87 @@ opacity: 0.47;
 .social-links{
     display: flex;
     gap: 17px;
+}
+
+/*gallery*/
+.bookImg{
+    height: 300px;
+    width: 100%;
+
+}
+.pages-Blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pagesWrap {
+    display: flex;
+    align-items: center;
+}
+ul.paginationBttns {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+    gap: 30px;
+}
+a.previousBttn {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 21px rgb(162 162 162 / 25%);
+    /* background: url(/static/media/rightArr.8b12883c.svg); */
+    background-repeat: no-repeat;
+    background-position: left 8px top 17px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #363636 !important;
+    padding: 10px 32px;
+}
+li.previous.paginationDisabled a.previousBttn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    /* background: url(/static/media/grey-leftarr.5f7fa5d8.svg); */
+    background-repeat: no-repeat;
+    background-position: left 8px top 13px;
+    color: #ACACAC !important;
+}
+.paginationBttns a {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2F243A;
+}
+.paginationActive a {
+    background: #FFAB01 ;
+    border-radius: 50%;
+    padding: 4px 11px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2F243A;
+}
+a.nextBttn {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 21px rgb(162 162 162 / 25%);
+    /* background: url(/static/media/right-arrow.184e69d7.svg); */
+    background-repeat: no-repeat;
+    background-position: right 8px top 17px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #363636;
+    padding: 10px 32px;
+}
+li.next.paginationDisabled a.nextBttn {
+    font-weight: 600;
+    font-size: 16px;
+    /* background: url(/static/media/grey-rightarr.8a576427.svg); */
+    background-repeat: no-repeat;
+    background-position: right 8px top 13px;
+    line-height: 19px;
+    color: #ACACAC;
 }
 
 

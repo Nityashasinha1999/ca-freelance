@@ -34,13 +34,20 @@
   .d-none-desk{
     display: block !important;
 }
-.mobNav{
-    /* display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    align-items: center;
-    padding-right: 20px; */
-}
+
+.sticky-wrapper {
+    position: relative;
+
+  }
+  
+  .sticky .mobNav{
+    position: fixed;
+    top: 0;
+    background: white;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+  }
 .logoMobBlk{
    display: flex;
    align-items: center;
@@ -141,6 +148,9 @@
    .team .teamBodySec1 .sec2{
        padding-left: 0px;
    }
+   .itemBanner{
+       background-position: center right;
+   }
 } 
 @media screen and (max-width:540px) {
     .team .teamBody{
@@ -219,6 +229,21 @@
         width: 248px;
         margin-left: 0px;
     }
+    .itemBanner{
+        background: linear-gradient(90deg, #555C66 8.06%, rgba(70, 77, 87, 0.63) 41.31%, rgba(85, 92, 102, 0) 73.33%), url("../images/frame.png");
+        background-position: center right 0px;
+        background-size: cover;
+        width: 100%;
+        height: 63vh;
+        align-items: center;
+        display: flex;
+    
+        
+    }
+    .pages-Blk{
+        flex-direction: column;
+        gap: 30px
+    }
   
 } 
 @media screen and (max-width:475px) { 
@@ -255,12 +280,27 @@
     .hrLineCompany{
         width: 258px;
     }
+    .aboutImg img {
+        width: 399px;
+        height: 331px;
+    }
+    ul.paginationBttns {
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        /* grid-gap: 30px; */
+        /* grid-gap: 30px; */
+        gap: 12px;
+    }
    
 }
 @media screen and (max-width: 379px){
     .searchBarWrap .searchBar {
     margin-left: 4px;
     width: 187px;
+}
+.bookImg {
+    height: 150px;
 }
 .logoMobBlk{
     padding-left: 0px;
