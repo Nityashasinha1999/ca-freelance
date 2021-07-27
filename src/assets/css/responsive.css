@@ -52,7 +52,7 @@
     align-items: center;
     padding-right: 10px;
 }
-.logoMobBlk img{
+.logoMobBlk .ham{
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .navbarMobWrap{

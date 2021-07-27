@@ -84,12 +84,12 @@ const Header = (props) => {
             <img
               src={openIcon}
               alt='nav'
-              className={isOpen ? "d-none" : "d-block"}
+              className={isOpen ? "d-none ham" : "d-block"}
             />
             <img
               src={close}
               alt='nav'
-              className={!isOpen ? "d-none" : "d-block"}
+              className={!isOpen ? "d-none ham" : "d-block"}
             />
           </div>
           <div className={isOpen ? "overlay-nav" : ""}></div>
