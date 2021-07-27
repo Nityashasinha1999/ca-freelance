@@ -44,13 +44,13 @@
 .logoMobBlk{
    display: flex;
    align-items: center;
-   padding-left: 20px;
+   padding-left: 10px;
 }
 .wrapNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 60px;
+    padding-right: 10px;
 }
 .logoMobBlk img{
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -134,8 +134,18 @@
    .navbarMobWrap{
        padding-left: 0px;
    }
+   .team .teamBodySec1 .sec2 .name, .team .teamBodySec1 .sec2 .des, .team .teamBodySec1 .sec2 .body{
+       text-align: center;
+       padding-top: 15px;
+   }
+   .team .teamBodySec1 .sec2{
+       padding-left: 0px;
+   }
 } 
 @media screen and (max-width:540px) {
+    .team .teamBody{
+        gap: 51px;
+    }
     .detailAbt, .vission .detailVission{
         font-size: 15px;
     }
@@ -144,14 +154,33 @@
     }
     .headingAbt {
         font-size: 30px;
-        width: 138px;
+        width: auto;
+    }
+    .hrLineVision{
+        width: 336px;
+    }
+    .blk-home{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .vission .headingVission{
         font-size: 30px;
-        width: 297px; 
+        width: auto; 
     }
     .itemBanner .bannerText {
         font-size: 30px;
+    }
+    .fs1 .title{
+        padding-bottom: 20px;
+    }
+    .fs1 .followUs{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .fs1 {
+        padding-top: 21px;
     }
     .enquiry{
         height: 46px;
@@ -182,16 +211,17 @@
         grid-gap: 162px;
         gap: 35px;
     }
+    .wrapNav {
+        flex-direction: row;
+        align-items: center;
+    }
+    .searchBarWrap .searchBar {
+        width: 248px;
+        margin-left: 0px;
+    }
   
 } 
 @media screen and (max-width:475px) { 
-    .wrapNav{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .searchBarWrap .searchBar{
-        margin-left: 45px;
-    }
     .companyBox1 .sec1{
         font-size: 15px;
     }
@@ -219,9 +249,20 @@
     .closeWrapNav{
         padding-right: 35px;
     }
+    .hrLineVision{
+        width: 258px;
+    }
+    .hrLineCompany{
+        width: 258px;
+    }
+   
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 379px){
     .searchBarWrap .searchBar {
-    margin-left: 24px;
+    margin-left: 4px;
+    width: 187px;
+}
+.logoMobBlk{
+    padding-left: 0px;
 }
 }
