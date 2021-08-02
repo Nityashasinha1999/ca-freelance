@@ -74,7 +74,7 @@ const Header = (props) => {
               <NavItem>
                 <NavLink
                   exact
-                  to='/work'
+                  to='/services'
                   className='headerLink'
                   activeClassName='active'>
                   Services
@@ -156,7 +156,7 @@ const Header = (props) => {
                     <NavItem>
                       <NavLink
                         exact
-                        to='/work'
+                        to='/services'
                         className='headerLink'
                         activeClassName='active'>
                         Services

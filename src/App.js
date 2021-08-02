@@ -24,7 +24,7 @@ function App() {
             renders the first one that matches the current URL. */}
           <Switch>
             <Route path='/' exact component={Home}></Route>
-            <Route path='/work' exact component={Works}></Route>
+            <Route path='/services' exact component={Works}></Route>
             <Route path='/gallery' exact component={Gallery}></Route>
             <Route path='/contact-us' exact component={ContactUs}></Route>
             <Route

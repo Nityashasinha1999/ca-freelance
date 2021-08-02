@@ -94,25 +94,25 @@ class Home extends React.Component {
                 </p>
                 <ul>
                   <li>
-                    <a href='/work'>
+                    <a href='/services'>
                       {" "}
                       Supply of security man power &amp; recruitment agency
                     </a>
                   </li>
                   <li>
-                    <a href='/work'>
+                    <a href='/services'>
                       {" "}
                       Staff recruitment for banking and non banking corporate
                       companies and government agencies.
                     </a>
                   </li>
                   <li>
-                    <a href='/work'>
+                    <a href='/services'>
                       Digital sales, marketing, promotion, other services
                     </a>
                   </li>
                   <li>
-                    <a href='/work'>
+                    <a href='/services'>
                       {" "}
                       Online, poster, hording advertisement agency to banking
                       and non banking corporates companies and government
@@ -120,13 +120,13 @@ class Home extends React.Component {
                     </a>
                   </li>
                   <li>
-                    <a href='/work'>
+                    <a href='/services'>
                       {" "}
                       Tangible and intangible property valuation services
                     </a>
                   </li>
                   <li>
-                    <a href='/work'>
+                    <a href='/services'>
                       {" "}
                       Government or private work contractor and job work
                     </a>
