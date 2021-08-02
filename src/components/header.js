@@ -1,7 +1,7 @@
 /** @format */
 
-import React, { Fragment, useEffect, useRef, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Navbar, NavItem, Input, Container } from "reactstrap";
 import openIcon from "../assets/images/icons/hamburger.png";
 import logo from "../assets/images/logo.png";
@@ -54,11 +54,9 @@ const Header = (props) => {
       <div className={x.join(" ")}>
         <Navbar className='d-none-mob'>
           <Container>
-            <NavItem href='/'>
-              <Link to='/'>
-                <img src={logo} alt='logo' />
-              </Link>
-            </NavItem>
+            <NavLink to='/'>
+              <img src={logo} alt='logo' />
+            </NavLink>
 
             <div className='searchBarWrap'>
               <Input type='text' placeholder='Search' className='searchBar' />
