@@ -1,3 +1,8 @@
+@media screen and (max-width:1400px) { 
+    .formBlkBox .sec1Wrap{
+        gap: 30px;
+    }
+}
 @media screen and (max-width:1200px) { 
     .searchBarWrap .searchBar {
         width: 325px;
@@ -12,7 +17,10 @@
         flex-wrap: wrap;
     justify-content: center;
     }
- 
+   .flexMap{
+       flex-direction: column;
+       gap: 40px;
+   }
 }
 @media screen and (max-width:1100px) { 
    .team .teamBody{
@@ -25,6 +33,15 @@
     }
     .teamBodySec1 .sec2{
         width: 239px;
+    }
+    .formBlkBox .sec1Wrap{
+        flex-direction: column;
+    }
+    .m-t{
+        margin-top: 0px;
+    }
+    .formBlkBox .sec1{
+        margin-top: 40px;
     }
 }
 @media screen and (max-width:999px) { 
@@ -122,12 +139,18 @@
     opacity: .7;
     z-index: 9999;
 }
-.itemBanner .bannerText , .itemBanner .enquiryWrap{
+.itemBanner .bannerText , .itemBanner .enquiryWrap, .itemBannerHome .bannerText, .itemBannerHome .enquiryWrap, .itemBannerHome .bannerText, .itemBannerContact .enquiryWrap {
+    width: auto;
+}
+.itemBanner2 .bannerText , .itemBanner2 .enquiryWrap{
     width: auto;
 }
 .aboutImg{
     display: flex;
     justify-content: center;
+}
+.formBlk{
+    width: 100%;
 }
 }
 @media screen and (max-width:780px) {
@@ -151,6 +174,20 @@
    .itemBanner{
        background-position: center right;
    }
+   .itemBannerHome{
+    background-position: center right;
+}
+.itemBannerContact{
+    background-position: center right;
+}
+   .itemBanner2{
+    background-position: center right;
+}
+.n-profileMain {
+    width: 90%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
 } 
 @media screen and (max-width:540px) {
     .team .teamBody{
@@ -179,7 +216,10 @@
         font-size: 30px;
         width: auto; 
     }
-    .itemBanner .bannerText {
+    .itemBanner .bannerText,     .itemBannerContact .bannerText ,.itemBannerHome .bannerText {
+        font-size: 30px;
+    }
+    .itemBanner2 .bannerText {
         font-size: 30px;
     }
     .fs1 .title{
@@ -240,23 +280,195 @@
     
         
     }
+    .itemBannerHome{
+        background: linear-gradient(90deg, #555C66 8.06%, rgba(70, 77, 87, 0.63) 41.31%, rgba(85, 92, 102, 0) 73.33%), url("../images/works.png");
+        background-position: center right 0px;
+        background-size: cover;
+        width: 100%;
+        height: 63vh;
+        align-items: center;
+        display: flex;
+    
+        
+    }
+    .itemBanner2{
+        background: linear-gradient(90deg, #555C66 8.06%, rgba(70, 77, 87, 0.63) 41.31%, rgba(85, 92, 102, 0) 73.33%), url("../images/work.png");
+        background-position: center right 0px;
+        background-size: cover;
+        width: 100%;
+        height: 63vh;
+        align-items: center;
+        display: flex;
+    
+        
+    }
+    .itemBannerContact{
+        background: linear-gradient(90deg, #555C66 8.06%, rgba(70, 77, 87, 0.63) 41.31%, rgba(85, 92, 102, 0) 73.33%), url("../images/contactRes.png");
+        background-position: center right 0px;
+        background-size: cover;
+        width: 100%;
+        height: 63vh;
+        align-items: center;
+        display: flex;
+    
+        
+    }
     .pages-Blk{
         flex-direction: column;
         gap: 30px
     }
+    .formBlkHeading .heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    .formBlkHeading .blkText{
+        font-size: 20px;
+    }
+    .formBlkBox .sec1 .sec1Heading{
+        width: auto;
+    }
+    .formBlkBox .sec1 .sec1Ans{
+        width: auto;
+    }
+    .google-map-code .mapIframe{
+        width: 350px !important;
+        height:300px !important;
+    }
+    .mail-icon{
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .mailText{
+        font-size: 20px !important;
+    }
+    .itemBannerContact .bannerText{
+        width: auto;
+    }
+    .closeChat{
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        padding: 6px;
+        border: 1px solid #eeeeee;
+        right: 0px;
+        transition-timing-function: ease;
+        transition: 2s;
+        top: 0px;
+    }
+    .cbWrap {
+        /* display: flex; */
+        background: white;
+        border: none;
+        padding: 20px;
+        min-height: auto;
+        /* min-height: 407px; */
+        overflow-y: scroll;
+        /* word-break: break-all; */
+        word-break: initial;
+        transition: 2s;
+        min-width: 300px;
+        transition-timing-function: ease;
+        transition: 2s;
+        transition-timing-function: ease;
+        float: right;
+        width: auto;
+        box-shadow: 0 0 5px 1px rgb(0 0 0 / 25%);
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+    }
+    .chatBotBox {
+        position: absolute;
+        top: -506px;
+        left: 0px;
+        transition-timing-function: ease;
+        /* overflow-y: scroll; */
+        transition: 2s;
+        right: 0px;
+    }
+    .cbWrapHeading{
+        font-size: 20px;
+    }
+    .cbWrap li{
+        padding-top: 5px;
+    }
+    .cbWrap li a{
+        font-size: 14px;
+    }
+    .bannerText{
+        font-weight: normal !important;
+        font-size: 21px !important;
+        line-height: 155% !important;
+    }
+    .bannerText span{
+        font-weight: 700 !important;
+        font-size: 25px !important;
+    }
+ 
+    /* .cbWrap {
+     
+        background: white;
+        border: none;
+        padding: 30px;
+        min-height: 407px;
+       
+        overflow-y: scroll;
+        transition: 2s;
+        min-width: 400px;
+        transition-timing-function: ease;
+        transition: 2s;
+        transition-timing-function: ease;
+        float: right;
+        width: auto;
+        box-shadow: 0 0 5px 1px rgb(0 0 0 / 25%);
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+    } */
+    /* .chatBot {
+        position: fixed;
+        bottom: 0px;
+        overflow: scroll;
+        z-index: 10;
+        right: 19px;
+        max-width: auto;
+        width: auto;
+        min-height: auto;
+        /* min-height: 117px; */
+        /* transition: 2s;
+        background-color: transparent;
+        z-index: 999999999;
+    } */
+    /* .chatBotBox{
+        position: initial;
+    }  */
   
 } 
 @media screen and (max-width:475px) { 
+    .form-control{
+        width: 310px;
+    }
+    .formBlk .submitBtn{
+        width: 260px;
+    }
     .companyBox1 .sec1{
         font-size: 15px;
     }
     .logoMobBlk .logo {
         width: 94px;
     }
-    .itemBanner{
+    .itemBanner,     .itemBannerContact{
         height: 62vh;
     }
-    .itemBanner .bannerText {
+    .itemBannerHome{
+        height: 62vh;
+    }
+    .itemBanner .bannerText,     .itemBannerHome .bannerText, .itemBannerContact .bannerText  {
+        font-size: 23px;
+
+    }
+    .itemBanner2{
+        height: 62vh;
+    }
+    .itemBanner2 .bannerText {
         font-size: 23px;
     }
     .enquiry {
@@ -292,7 +504,30 @@
         /* grid-gap: 30px; */
         gap: 12px;
     }
+    .formBlkHeading .blkText{
+        text-align: center;
+        font-size: 17px;
+    }
+    .formBlkHeading .heading {
+        text-align: center;
+        font-size: 24px;
+    }
+    .formBlkBox .sec1 .sec1Heading{
+        font-size: 18px;
+    }
+    .formBlkBox .sec1 .sec1Ans{
+        font-size: 15px;
+    }
    
+    .chatBot{
+        bottom: -25px;
+    }
+    .float-wtsapp .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 130px;
+    }
 }
 @media screen and (max-width: 379px){
     .searchBarWrap .searchBar {
@@ -304,5 +539,12 @@
 }
 .logoMobBlk{
     padding-left: 0px;
+}
+.google-map-code .mapIframe{
+    width: 300px !important;
+    height:250px !important;
+}
+.flexMapheading{
+    font-size: 30px !important;
 }
 }

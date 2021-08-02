@@ -6,10 +6,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Slide from "react-reveal/Slide";
-import video from "../assets/images/videos.png";
+
 import teamImg from "../assets/images/teamImg.png";
 import close from "../assets/images/icons/close.svg";
-import images from "../assets/images/images.png";
+import serviceBot from "../assets/images/icons/serviceBot.png";
 import { Container, Row, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
 import about1 from "../assets/images/about2.png";
@@ -22,6 +22,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       open: false,
+      modal: false,
       responsive: {
         0: {
           items: 1,
@@ -67,6 +68,9 @@ class Home extends React.Component {
   toggle = () => {
     this.setState((prevState) => ({ open: !prevState.open }));
   };
+  toggleModal = () => {
+    this.setState({ modal: !this.state.modal });
+  };
   render() {
     const styles = {
       open: { background: "#ecf0f1" },
@@ -79,17 +83,55 @@ class Home extends React.Component {
             <div className='boxToggle'>
               <button
                 onClick={this.toggle}
-                className={this.state.open ? "d-none " : "d-block"}>
-                open
+                className={this.state.open ? "d-none " : "d-block botbtn"}>
+                <img src={serviceBot} alt='bot' className='bot' />
               </button>
             </div>
             <div className={this.state.open ? "chatBotBox" : "d-none"}>
               <div className='cbWrap'>
-                <p>
-                  {" "}
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s,
+                <p className='cbWrapHeading'>
+                  Hi, Click on each services for more details!
                 </p>
+                <ul>
+                  <li>
+                    <a href='/work'>
+                      {" "}
+                      Supply of security man power &amp; recruitment agency
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/work'>
+                      {" "}
+                      Staff recruitment for banking and non banking corporate
+                      companies and government agencies.
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/work'>
+                      Digital sales, marketing, promotion, other services
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/work'>
+                      {" "}
+                      Online, poster, hording advertisement agency to banking
+                      and non banking corporates companies and government
+                      agencies
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/work'>
+                      {" "}
+                      Tangible and intangible property valuation services
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/work'>
+                      {" "}
+                      Government or private work contractor and job work
+                    </a>
+                  </li>
+                </ul>
                 <img
                   src={close}
                   alt='close'
@@ -129,31 +171,30 @@ class Home extends React.Component {
                 <span>Accounting Needs Covered</span>
               </p>
               <div className='enquiryWrap'>
-                <button className='enquiry'>Enquire Now </button>
+                <button
+                  className='enquiry'
+                  onClick={this.toggleModal}
+                  data-toggle='modal'
+                  data-target='#exampleModalCenter'>
+                  Enquire Now{" "}
+                </button>
               </div>
             </div>
           </div>
-          <div class='itemBanner'>
+          <div class='itemBannerHome'>
             <div className='container'>
               <p className='bannerText'>
-                We Got All Your
-                <br />
-                <span>Accounting Needs Covered</span>
+                We Focus On Helping Clients Design And <br />
+                <span>Buid Tomorrow’s Organization</span>
               </p>
               <div className='enquiryWrap'>
-                <button className='enquiry'>Enquire Now </button>
-              </div>
-            </div>
-          </div>
-          <div class='itemBanner'>
-            <div className='container'>
-              <p className='bannerText'>
-                We Got All Your
-                <br />
-                <span>Accounting Needs Covered</span>
-              </p>
-              <div className='enquiryWrap'>
-                <button className='enquiry'>Enquire Now </button>
+                <button
+                  className='enquiry'
+                  onClick={this.toggleModal}
+                  data-toggle='modal'
+                  data-target='#exampleModalCenter'>
+                  Enquire Now{" "}
+                </button>
               </div>
             </div>
           </div>
@@ -176,17 +217,15 @@ class Home extends React.Component {
                       <hr className='hrLine' />
                     </Fade>
                     <p className='detailAbt'>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was popularised in the
-                      1960s with the release of Letraset sheets containing Lorem
-                      Ipsum passages, and more recently with desktop publishing
-                      software like Aldus PageMaker including versions of Lorem
-                      Ipsum.
+                      We are prominent Chartered Accountants in India. We offer
+                      services and other major cities in India, like Auditing,
+                      Company formation in India, Business Taxation, Direct and
+                      Indirect Taxation, International Taxation, Starting
+                      business in India, registration of foreign companies,
+                      transfer pricing, Goods &amp; Services Tax (GST), Company
+                      Law Consultancy, NRI Taxation, Startup Services and
+                      Book-Keeping &amp; Outsourcing Services, Valuations and
+                      Insolvency Advisory Services.
                     </p>
                   </Col>
                 </Row>
@@ -199,16 +238,16 @@ class Home extends React.Component {
                   <hr className='hrLineVision' />
                 </Fade>
                 <p className='detailVission'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                  Our firm continuously strives to be the Premier Accounting and
+                  Consultancy firm that provides excellent service to our
+                  clients and an excellent quality of life for our associates.
+                  Our Vision is to establish as a Full-Services firm by 2025. We
+                  will predominantly work with organisations in the charitable
+                  and voluntary sectors as partners to help them achieve their
+                  desired outcomes. Our Mission is to provide clients with a
+                  ‘One-Stop Solution’ for all their business, financial and
+                  regulatory requirements.We mainly focus on ‘Experience,
+                  Expertise and Efficiency’ .
                 </p>
               </div>
             </Slide>
@@ -275,6 +314,118 @@ class Home extends React.Component {
               </div>
             </Slide>
           </Container>
+          {this.state.modal ? (
+            <div
+              class='modal'
+              id='exampleModalCenter'
+              tabindex='-1'
+              role='dialog'
+              aria-labelledby='exampleModalCenterTitle'
+              aria-hidden='true'>
+              <div class='modal-dialog modal-dialog-centered' role='document'>
+                <div class='modal-content'>
+                  <div class='modal-header'>
+                    <div></div>
+                    <button
+                      type='button'
+                      class='closeBtnModal'
+                      data-dismiss='modal'
+                      aria-label='Close'
+                      onClick={this.toggleModal}>
+                      <span aria-hidden='true'>&times;</span>
+                    </button>
+                  </div>
+
+                  <form
+                    action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSe2yqD_Van-D9uQDw5y60YDjb_coPIMqy0ruB_PFV5vlbf08A/formResponse'
+                    className='formBlk'
+                    autoComplete='off'>
+                    <div class='form-floating mb-3'>
+                      <input
+                        type='email'
+                        class='form-control'
+                        name='emailAddress'
+                        id='floatingInput'
+                        placeholder='Email'
+                        autoComplete='off'
+                        required
+                      />
+                      <label for='floatingInput'>Email address</label>
+                    </div>
+                    <div class='form-floating'>
+                      <input
+                        type='text'
+                        name='entry.2005620554'
+                        class='form-control'
+                        id='floatingPassword'
+                        placeholder='Name'
+                        autoComplete='off'
+                        required
+                      />
+                      <label for='floatingPassword'>Name</label>
+                    </div>
+                    <div class='form-floating'>
+                      <input
+                        type='tel'
+                        name='entry.1166974658'
+                        class='form-control'
+                        id='floatingPassword'
+                        placeholder='Phone number'
+                        autoComplete='off'
+                        required
+                      />
+                      <label for='floatingPassword'>Phone number</label>
+                    </div>
+                    <div class='form-floating'>
+                      <input
+                        type='text'
+                        name='entry.1065046570'
+                        class='form-control'
+                        id='floatingPassword'
+                        placeholder='City'
+                        autoComplete='off'
+                        required
+                      />
+                      <label for='floatingPassword'>City</label>
+                    </div>
+
+                    <div class='form-floating'>
+                      <input
+                        type='text'
+                        name='entry.1859717844'
+                        class='form-control'
+                        id='floatingPassword'
+                        placeholder='State'
+                        autoComplete='off'
+                        required
+                      />
+                      <label for='floatingPassword'>State</label>
+                    </div>
+                    <div class='form-floating'>
+                      <input
+                        type='text'
+                        name='entry.839337160'
+                        class='form-control'
+                        id='floatingPassword'
+                        placeholder='Reason for Contacting Us'
+                        autoComplete='off'
+                        required
+                      />
+                      <label for='floatingPassword'>
+                        Reason for Contacting Us
+                      </label>
+                    </div>
+
+                    <button type='submit' className='submitBtn'>
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     );

@@ -11,22 +11,30 @@ import Fade from "react-reveal/Fade";
 const Header = (props) => {
   const [isSticky, setSticky] = useState(false);
   const ref = useRef(null);
+  const [scrolled, setScrolled] = React.useState(false);
+
   const handleScroll = () => {
-    if (ref.current) {
-      setSticky(ref.current.getBoundingClientRect().top <= 0);
+    const offset = window.scrollY;
+    if (offset > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
     }
   };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  let x = ["sticky-wrapper"];
+  if (scrolled) {
+    x.push(" sticky");
+  }
+
   const [active, setActive] = useState(false);
   const toggleActive = () => {
     setActive(!active);
   };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", () => handleScroll);
-    };
-  }, []);
   const [isOpen, setIsOpen] = useState(false);
   const toggle = (event) => {
     document.body.classList.toggle("modal-open");
@@ -40,7 +48,10 @@ const Header = (props) => {
 
   return (
     <div>
-      <div className={`sticky-wrapper${isSticky ? " sticky" : ""}`} ref={ref}>
+      {/* <div
+        className={`sticky-wrapper${isSticky ? " sticky" : "stick"}`}
+        ref={ref}> */}
+      <div className={x.join(" ")}>
         <Navbar className='d-none-mob'>
           <Container>
             <NavItem href='/'>
@@ -66,7 +77,7 @@ const Header = (props) => {
                   to='/work'
                   className='headerLink'
                   activeClassName='active'>
-                  Works
+                  Services
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -81,7 +92,7 @@ const Header = (props) => {
               <NavItem>
                 <NavLink
                   exact
-                  to='/login'
+                  to='/contact-us'
                   className='headerLink'
                   activeClassName='active'>
                   Contact Us
@@ -148,7 +159,7 @@ const Header = (props) => {
                         to='/work'
                         className='headerLink'
                         activeClassName='active'>
-                        Works
+                        Services
                       </NavLink>
                     </NavItem>
                     <NavItem>
@@ -163,7 +174,7 @@ const Header = (props) => {
                     <NavItem>
                       <NavLink
                         exact
-                        to='/login'
+                        to='/contact-us'
                         className='headerLink'
                         activeClassName='active'>
                         Contact Us
