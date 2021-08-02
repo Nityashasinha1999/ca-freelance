@@ -55,7 +55,9 @@ const Header = (props) => {
         <Navbar className='d-none-mob'>
           <Container>
             <NavItem href='/'>
-              <img src={logo} alt='logo' />
+              <Link to='/'>
+                <img src={logo} alt='logo' />
+              </Link>
             </NavItem>
 
             <div className='searchBarWrap'>
