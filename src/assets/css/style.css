@@ -199,12 +199,19 @@ img.bot{
     background-color: #444444;
     width: 100%;
 }
+.headerFirstWrap .text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* padding-right: 247px; */
+    align-items: flex-end;
+    gap: 20px;
+    padding-right: 40px;
+}
 .headerFirstWrap .text .contact {
     color: #FFAB01;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 247px;
-    align-items: flex-end;
+ 
     padding-top: 10px;
     padding-bottom: 10px;
 }

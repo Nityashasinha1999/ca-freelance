@@ -108,9 +108,9 @@ const Header = (props) => {
         <div className='mobNav'>
           <div className='wrapNav'>
             <div className='logoMobBlk'>
-              <NavItem href='/'>
+              <NavLink to='/'>
                 <img src={logo} alt='logo' className='logo' />
-              </NavItem>
+              </NavLink>
             </div>
             <div className='searchBarWrap'>
               <Input type='text' placeholder='Search' className='searchBar' />
