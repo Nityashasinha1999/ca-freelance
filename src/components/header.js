@@ -144,15 +144,14 @@ const Header = (props) => {
                 </div>
                 <Fade left>
                   <div className='navbarMobWrap'>
-                    <NavItem>
-                      <NavLink
-                        exact
-                        to='/'
-                        className='headerLink'
-                        activeClassName='active'>
-                        Home
-                      </NavLink>
-                    </NavItem>
+                    <NavLink
+                      exact
+                      to='/'
+                      className='headerLink'
+                      activeClassName='active'>
+                      Home
+                    </NavLink>
+
                     <NavItem>
                       <NavLink
                         exact

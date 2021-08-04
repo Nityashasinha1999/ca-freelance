@@ -10,8 +10,7 @@ function Form() {
 
         <form
           action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSe2yqD_Van-D9uQDw5y60YDjb_coPIMqy0ruB_PFV5vlbf08A/formResponse'
-          className='formBlk'
-          autoComplete='off'>
+          className='formBlk'>
           <div class='form-floating mb-3'>
             <input
               type='email'
@@ -73,30 +72,7 @@ function Form() {
             />
             <label for='floatingPassword'>State</label>
           </div>
-          <div class='form-floating'>
-            <input
-              type='text'
-              name='entry.1859717844'
-              class='form-control'
-              id='floatingPassword'
-              placeholder='State'
-              autoComplete='off'
-              required
-            />
-            <label for='floatingPassword'>State</label>
-          </div>
-          <div class='form-floating'>
-            <input
-              type='text'
-              name='entry.1859717844'
-              class='form-control'
-              id='floatingPassword'
-              placeholder='State'
-              autoComplete='off'
-              required
-            />
-            <label for='floatingPassword'>State</label>
-          </div>
+
           <div class='form-floating'>
             <input
               type='text'

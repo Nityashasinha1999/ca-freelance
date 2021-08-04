@@ -3,6 +3,28 @@
         gap: 30px;
     }
 }
+.itemBanner .bannerText{
+    font-size: 34px !important;
+}
+.bannerText span{
+    font-size: 40px !important;
+}
+.headingAbt, .vission .headingVission, .company .headingCompany {
+    font-size: 35px;
+}
+.detailAbt, .vission .detailVission, .companyBox1 .sec1, .team .teamBodySec1 .sec2 .body{
+    font-size: 16px;
+}
+.team .teamBodySec1 .sec2 .des{
+    font-size: 18px;
+}
+.team .teamBodySec1 .sec2 .name{
+    font-size: 25px;
+}
+.fs1 .aboutText{
+    font-size: 17px;
+}
+
 @media screen and (max-width:1200px) { 
     .searchBarWrap .searchBar {
         width: 325px;
