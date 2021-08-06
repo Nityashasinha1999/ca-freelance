@@ -37,10 +37,10 @@ function Footer() {
             <img src={footer} alt='footer' className='mt-3' />
           </div>
           <div className='fs1'>
-            <p className='title text-center'>Search</p>
+            {/* <p className='title text-center'>Search</p>
             <div className='searchBarWrap'>
               <Input type='text' placeholder='Search' className='searchBar' />
-            </div>
+            </div> */}
             <div>
               <p className='followUs mt-3 text-center'>Follow Us</p>
               <div className='social-links mt-3'>
@@ -62,12 +62,12 @@ function Footer() {
                 </p>
               </div>
             </div>
-            <div className='fs1'>
+            {/* <div className='fs1'>
               <p className='title text-center'>Search</p>
               <div className='searchBarWrap'>
                 <Input type='text' placeholder='Search' className='searchBar' />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className='mob-footer'>
             <div className='fs1'>
@@ -83,7 +83,7 @@ function Footer() {
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,
               </p>
-              <p className='followUs'>Follow Us</p>
+              <p className='title'>Follow Us</p>
               <div className='social-links'>
                 <img src={fb} alt='fb' />
                 <img src={twitter} alt='fb' />

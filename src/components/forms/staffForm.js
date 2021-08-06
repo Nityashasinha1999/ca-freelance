@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function Form() {
+function StaffForm() {
   return (
     <div className='formWrap'>
       <div class='container'>
@@ -12,8 +12,8 @@ function Form() {
             Supply of security man power &amp; recruitment agency
           </p>
           <p className='blkText'>
-            Security guard - Banking and non banking corporates companies and
-            government agencies.
+            Staff recruitment for banking and non banking corporate companies
+            and government agencies.
           </p>
         </div>
         <form
@@ -103,4 +103,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default StaffForm;

@@ -2,18 +2,14 @@
 
 import React from "react";
 
-function Form() {
+function Government() {
   return (
     <div className='formWrap'>
       <div class='container'>
         <div class='header'> </div>
         <div className='formBlkHeading'>
           <p className='heading'>
-            Supply of security man power &amp; recruitment agency
-          </p>
-          <p className='blkText'>
-            Security guard - Banking and non banking corporates companies and
-            government agencies.
+            Government or private work contractor and job work
           </p>
         </div>
         <form
@@ -103,4 +99,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Government;

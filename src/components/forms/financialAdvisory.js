@@ -2,18 +2,19 @@
 
 import React from "react";
 
-function Form() {
+function financialAdvisory() {
   return (
     <div className='formWrap'>
       <div class='container'>
         <div class='header'> </div>
         <div className='formBlkHeading'>
           <p className='heading'>
-            Supply of security man power &amp; recruitment agency
+            Finance, insurance and other lead provider, calling, collection and
+            other services
           </p>
           <p className='blkText'>
-            Security guard - Banking and non banking corporates companies and
-            government agencies.
+            {" "}
+            Financial advisory corporate public and private sector
           </p>
         </div>
         <form
@@ -103,4 +104,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default financialAdvisory;

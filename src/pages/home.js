@@ -2,17 +2,16 @@
 
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
-
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Slide from "react-reveal/Slide";
-
 import teamImg from "../assets/images/teamImg.png";
 import close from "../assets/images/icons/close.svg";
 import serviceBot from "../assets/images/icons/serviceBot.png";
 import { Container, Row, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
 import about1 from "../assets/images/about2.png";
+import Apps from "../components/homeBlk/teamCarousel";
 
 // ....
 
@@ -60,6 +59,50 @@ class Home extends React.Component {
           nav: false,
 
           loop: true,
+          dots: true,
+        },
+      },
+      team: {
+        0: {
+          items: 0,
+          dots: true,
+          loop: false,
+          // stagePadding: 30,
+          margin: 0,
+        },
+        450: {
+          items: 0,
+          loop: false,
+          stagePadding: 0,
+        },
+        600: {
+          items: 1,
+          loop: false,
+        },
+        768: {
+          items: 1,
+
+          loop: false,
+        },
+        999: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+          margin: 0,
+        },
+        1201: {
+          items: 2,
+
+          loop: true,
+          dots: true,
+        },
+        1399: {
+          items: 2,
+          stagePadding: 40,
+          nav: false,
+          margin: 60,
+          loop: false,
           dots: true,
         },
       },
@@ -232,23 +275,33 @@ class Home extends React.Component {
               </div>
             </Slide>
             <Slide bottom>
-              <div className='vission blk-home'>
-                <p className='headingVission'>Our Vission Mission</p>
-                <Fade left>
-                  <hr className='hrLineVision' />
-                </Fade>
-                <p className='detailVission'>
-                  Our firm continuously strives to be the Premier Accounting and
-                  Consultancy firm that provides excellent service to our
-                  clients and an excellent quality of life for our associates.
-                  Our Vision is to establish as a Full-Services firm by 2025. We
-                  will predominantly work with organisations in the charitable
-                  and voluntary sectors as partners to help them achieve their
-                  desired outcomes. Our Mission is to provide clients with a
-                  ‘One-Stop Solution’ for all their business, financial and
-                  regulatory requirements.We mainly focus on ‘Experience,
-                  Expertise and Efficiency’ .
-                </p>
+              <div className='vissionWrap'>
+                <div className='vission blk-home'>
+                  <p className='headingVission'>Our Vission</p>
+                  <Fade left>
+                    <hr className='hrLineVision' />
+                  </Fade>
+                  <p className='detailVission'>
+                    Our firm continuously strives to be the Premier Accounting
+                    and Consultancy firm that provides excellent service to our
+                    clients and an excellent quality of life for our associates.
+                    Our Vision is to establish as a Full-Services firm by 2025.
+                  </p>
+                </div>
+                <div className='vission blk-home'>
+                  <p className='headingVission'>Our Mission</p>
+                  <Fade left>
+                    <hr className='hrLineVision' />
+                  </Fade>
+                  <p className='detailVission'>
+                    We will predominantly work with organisations in the
+                    charitable and voluntary sectors as partners to help them
+                    achieve their desired outcomes. Our Mission is to provide
+                    clients with a ‘One-Stop Solution’ for all their business,
+                    financial and regulatory requirements.We mainly focus on
+                    ‘Experience, Expertise and Efficiency’ .
+                  </p>
+                </div>
               </div>
             </Slide>
             <Slide bottom>
@@ -287,30 +340,73 @@ class Home extends React.Component {
                 <Fade left>
                   <hr className='hrLineTeam' />
                 </Fade>
-                <div className='teamBody'>
-                  <div className='teamBodySec1'>
-                    <img src={teamImg} alt='teamImg' className='teamImg' />
-                    <div className='sec2'>
-                      <p className='name'>Name</p>
-                      <p className='des'>Designation</p>
-                      <p className='body'>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </p>
+                {/* <div className='teamBody'>
+                  <OwlCarousel
+                    className='owl-theme'
+                    loop
+                    margin={10}
+                    // //   smartSpeed={750}
+                    // items={1}
+                    dots={true}
+                    responsive={this.state.team}>
+                    <div className='teamBodySec1'>
+                      <img src={teamImg} alt='teamImg' className='teamImg' />
+                      <div className='sec2'>
+                        <p className='name'>Name</p>
+                        <p className='des'>Designation</p>
+                        <p className='body'>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className='teamBodySec1'>
-                    <img src={teamImg} alt='teamImg' className='teamImg' />
-                    <div className='sec2'>
-                      <p className='name'>Name</p>
-                      <p className='des'>Designation</p>
-                      <p className='body'>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </p>
+
+                    <div className='teamBodySec1'>
+                      <img src={teamImg} alt='teamImg' className='teamImg' />
+                      <div className='sec2'>
+                        <p className='name'>Name</p>
+                        <p className='des'>Designation</p>
+                        <p className='body'>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </OwlCarousel>
+                </div> */}
+
+                {/* <OwlCarousel
+                    className='owl-theme'
+                    // margin={10}
+                    // //   smartSpeed={750}
+                    // loop={false}
+                    // dots={true}
+                    responsive={this.state.team}>
+                    <div className='teamBodySec1'>
+                      <img src={teamImg} alt='teamImg' className='teamImg' />
+                      <div className='sec2'>
+                        <p className='name'>Name</p>
+                        <p className='des'>Designation</p>
+                        <p className='body'>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                    </div>
+                    <div className='teamBodySec1'>
+                      <img src={teamImg} alt='teamImg' className='teamImg' />
+                      <div className='sec2'>
+                        <p className='name'>Name</p>
+                        <p className='des'>Designation</p>
+                        <p className='body'>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                    </div>
+                  </OwlCarousel> */}
+
+                <Apps />
               </div>
             </Slide>
           </Container>

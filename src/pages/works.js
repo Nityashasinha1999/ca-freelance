@@ -101,7 +101,7 @@ class Work extends React.Component {
             {/* <img src={ca} alt="ca"/> */}
             <div className='container'>
               <p className='bannerText'>
-                We Provide Real Worls Solution <br />
+                We Provide Real Worlds Solution <br />
                 To Complex Business Issues
                 <br />
                 <span>Through Our Services.</span>
@@ -137,8 +137,8 @@ class Work extends React.Component {
                   </p>
                   <p className='sec1Ans '>
                     <a
-                      href='/Security guard - Banking and non banking corporates
-                    companies and government agencies'
+                      href='/Security-guard-Banking-and-non-banking-corporates
+                    companies-and-government-agencies'
                       target='_blank'
                       className='sec1Ans'>
                       {" "}
@@ -153,11 +153,11 @@ class Work extends React.Component {
                     </p>
                     <p className='sec1Ans '>
                       <a
-                        href='https://docs.google.com/forms/d/1Mfj3Ex-QWnK2gdJJnI6K8Her2eYpwmHiOL5AtJeQM6w/edit'
+                        href='/Staff-recruitment-for-banking-and-non-banking-corporate-companies-and-government-agencies'
                         target='_blank'
                         className='sec1Ans'>
                         {" "}
-                        https://docs.google.com/forms/d/1Mfj3Ex-QWnK2gdJJnI6K8Her2eYpwmHiOL5AtJeQM6w/edit
+                        Contact Us
                       </a>
                     </p>
                   </div>
@@ -169,9 +169,25 @@ class Work extends React.Component {
                   <p className='sec1Ans'>
                     Online business promotions and marketing
                   </p>
-                  <div className='sec1AnsWrap'>
-                    <p className='sec1Ans'>Online client data sourcing</p>
-                  </div>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Online-business-promotions-and-marketing'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
+                  <p className='sec1Ans mt-3'>Online client data sourcing</p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Online-client-data-sourcing'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className='sec1Wrap '>
@@ -180,24 +196,63 @@ class Work extends React.Component {
                     Online, poster, hording advertisement agency to banking and
                     non banking corporates companies and government agencies
                   </p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Online-poster-hording-advertisement-agency-to-banking-and-non-banking-corporates-companies-and-government-agencies'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
                 </div>
                 <div className='sec1 mt-5 zoomAnimation'>
                   <p className='sec1Heading'>
                     Finance, insurance and other lead provider, calling,
                     collection and other services
                   </p>
-                  <p className='sec1Ans'>Lead provider</p>
-                  <div className='sec1AnsWrap'>
-                    <p className='sec1Ans'>Calling</p>
-                  </div>
+                  <p className='sec1Ans mt-3'>Lead provider</p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Lead-provider'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
 
-                  <p className='sec1Ans'>Collection and recovery</p>
+                  <p className='sec1Ans mt-3'>Calling</p>
+                  <p className='sec1Ans '>
+                    <a href='/Calling' target='_blank' className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
 
-                  <div className='sec1AnsWrap'>
-                    <p className='sec1Ans'>
-                      Financial advisory corporate public and private sector
-                    </p>
-                  </div>
+                  <p className='sec1Ans mt-3'>Collection and recovery</p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Collection-and-recovery'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
+
+                  <p className='sec1Ans mt-3'>
+                    Financial advisory corporate public and private sector
+                  </p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Financial-advisory-corporate-public-and-private-sector'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className='sec1Wrap '>
@@ -205,27 +260,61 @@ class Work extends React.Component {
                   <p className='sec1Heading'>
                     Tangible and intangible property valuation services
                   </p>
+
                   <p className='sec1Ans'>
                     Tangible property valuation to banking and nonbanking
                     companies and government agencies
                   </p>
-                  <div className='sec1AnsWrap'>
-                    <p className='sec1Ans'>
-                      Trade mark, patent, copyright, goodwill valuation services
-                      to banking and nonbanking corporates companies and
-                      government agencies
-                    </p>
-                  </div>
-                  <div className='sec1AnsWrap'>
-                    <p className='sec1Ans'>
-                      Vehicle valiuation to banking and non banking corporates
-                      companies and government agencies
-                    </p>
-                  </div>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Tangible-property-valuation-to-banking-and-nonbanking
+                      companies-and-government-agencies'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
+                  <p className='sec1Ans'>
+                    Trade mark, patent, copyright, goodwill valuation services
+                    to banking and nonbanking corporates companies and
+                    government agencies
+                  </p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Trade-mark-patent-copyright-goodwill-valuation-services'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
+                  <p className='sec1Ans'>
+                    Vehicle valiuation to banking and non banking corporates
+                    companies and government agencies
+                  </p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Vehicle-valiuation'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
+                  </p>
                 </div>
                 <div className='sec1 p-72 zoomAnimation'>
                   <p className='sec1Heading'>
                     Government or private work contractor and job work
+                  </p>
+                  <p className='sec1Ans '>
+                    <a
+                      href='/Government-or-private-work-contractor-and-job-work'
+                      target='_blank'
+                      className='sec1Ans'>
+                      {" "}
+                      Contact Us
+                    </a>
                   </p>
                 </div>
               </div>

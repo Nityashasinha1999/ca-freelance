@@ -2,24 +2,23 @@
 
 import React from "react";
 
-function Form() {
+function Calling() {
   return (
     <div className='formWrap'>
       <div class='container'>
         <div class='header'> </div>
+
         <div className='formBlkHeading'>
           <p className='heading'>
-            Supply of security man power &amp; recruitment agency
+            Finance, insurance and other lead provider, calling, collection and
+            other services
           </p>
-          <p className='blkText'>
-            Security guard - Banking and non banking corporates companies and
-            government agencies.
-          </p>
+          <p className='blkText'>Calling</p>
         </div>
         <form
           action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSe2yqD_Van-D9uQDw5y60YDjb_coPIMqy0ruB_PFV5vlbf08A/formResponse'
           className='formBlk'>
-          <div class='form-floating mb-3'>
+          <div class='form-floating mb-3 '>
             <input
               type='email'
               class='form-control'
@@ -103,4 +102,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Calling;

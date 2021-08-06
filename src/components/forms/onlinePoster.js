@@ -2,18 +2,15 @@
 
 import React from "react";
 
-function Form() {
+function OnlinePoster() {
   return (
     <div className='formWrap'>
       <div class='container'>
         <div class='header'> </div>
         <div className='formBlkHeading'>
           <p className='heading'>
-            Supply of security man power &amp; recruitment agency
-          </p>
-          <p className='blkText'>
-            Security guard - Banking and non banking corporates companies and
-            government agencies.
+            Online, poster, hording advertisement agency to banking and non
+            banking corporates companies and government agencies
           </p>
         </div>
         <form
@@ -103,4 +100,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default OnlinePoster;

@@ -65,6 +65,16 @@
     .formBlkBox .sec1{
         margin-top: 40px;
     }
+    .vission .detailVission{
+        width: auto;
+    }
+    .vissionWrap{
+        gap: 20px;
+    }
+    .formBlkHeading .heading{
+        font-size: 28px;
+        line-height: 39px;
+    }
 }
 @media screen and (max-width:999px) { 
   .d-none-mob{
@@ -174,6 +184,29 @@
 .formBlk{
     width: 100%;
 }
+.vissionWrap{
+    gap: 20px;
+    flex-direction: column;
+}
+.vission{
+    min-height: auto;
+    padding-top: 20px;
+}
+.team .teamBody {
+    flex-wrap: nowrap;
+    padding-left: 333px;
+    grid-gap: 122px;
+    width: 30em;
+    overflow-x: auto;
+    word-break: break-word;
+    /* white-space: nowrap; */
+    justify-content: center;
+}
+.formWrap .heading, .formWrap .blkText {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 }
 @media screen and (max-width:780px) {
    .mob-footer{
@@ -212,6 +245,24 @@
 }
 } 
 @media screen and (max-width:540px) {
+    .headerFirstWrap .text {
+        display: flex;
+        align-items: center;
+        /* justify-content: flex-end; */
+        justify-content: initial;
+        padding-left: 10px;
+        /* padding-right: 247px; */
+        padding-right: 10px;
+        align-items: flex-end;
+        grid-gap: 16px;
+        gap: 13px;
+        /* padding-right: 40px; */
+    }
+    
+
+.headerFirstWrap .text .contact { 
+    font-size: 12px;
+}
     .team .teamBody{
         gap: 51px;
     }
@@ -462,7 +513,12 @@
     /* .chatBotBox{
         position: initial;
     }  */
-  
+    .formBlk{
+        margin-top: 30px;
+    }
+    .formWrap {
+        padding-top: 40px;
+    }
 } 
 @media screen and (max-width:475px) { 
     .form-control{
@@ -528,11 +584,13 @@
     }
     .formBlkHeading .blkText{
         text-align: center;
-        font-size: 17px;
+        font-size: 14px;
+        line-height: 25px;
     }
     .formBlkHeading .heading {
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
+        line-height: 29px;
     }
     .formBlkBox .sec1 .sec1Heading{
         font-size: 18px;

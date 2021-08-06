@@ -5,7 +5,7 @@ import OwlCarousel from "react-owl-carousel";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
+import Map from "../components/map";
 import close from "../assets/images/icons/close.svg";
 import mail from "../assets/images/icons/mail.png";
 import phone from "../assets/images/icons/phone.png";
@@ -143,7 +143,7 @@ class ContactUs extends React.Component {
           <p className='flexMapheading'>Reach Out To Us</p>
           <div className='flexMap'>
             <div className='mapSecWrap'>
-              <div className='google-map-code'>
+              {/* <div className='google-map-code'>
                 <iframe
                   src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.79979123!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1587818542745!5m2!1sen!2sin'
                   width='500'
@@ -154,6 +154,18 @@ class ContactUs extends React.Component {
                   aria-hidden='false'
                   className='mapIframe'
                   tabindex='0'></iframe>
+              </div> */}
+              <div className='google-map-code'>
+                <iframe
+                  src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15546.996466263798!2d80.203829!3d13.051635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xac970688beb204f0!2sCraft+32+Dental+Care+-+Dentist+in+Vadapalani!5e0!3m2!1sen!2sin!4v1509544131179'
+                  width='100%'
+                  height='300'
+                  width='500'
+                  height='450'
+                  frameborder='0'
+                  style={{ border: 0 }}
+                  className='mapIframe'
+                  allowfullscreen=''></iframe>
               </div>
             </div>
             <div className='contactUsDetail'>

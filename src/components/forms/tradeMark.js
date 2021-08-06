@@ -2,18 +2,19 @@
 
 import React from "react";
 
-function Form() {
+function TradeMark() {
   return (
     <div className='formWrap'>
       <div class='container'>
         <div class='header'> </div>
         <div className='formBlkHeading'>
           <p className='heading'>
-            Supply of security man power &amp; recruitment agency
+            Tangible and intangible property valuation services
           </p>
           <p className='blkText'>
-            Security guard - Banking and non banking corporates companies and
-            government agencies.
+            {" "}
+            Trade mark, patent, copyright, goodwill valuation services to
+            banking and nonbanking corporates companies and government agencies
           </p>
         </div>
         <form
@@ -103,4 +104,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default TradeMark;
