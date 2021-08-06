@@ -75,6 +75,9 @@
         font-size: 28px;
         line-height: 39px;
     }
+    .carBlk .owl-carousel .owl-stage-outer {
+        padding: 0 93px;
+    }
 }
 @media screen and (max-width:999px) { 
   .d-none-mob{
@@ -242,6 +245,10 @@
     width: 90%;
     /* max-width: 1200px; */
     margin: 0 auto;
+}
+.carBlk .owl-carousel .owl-stage {
+    display: flex;
+    justify-content: center;
 }
 } 
 @media screen and (max-width:540px) {
@@ -519,6 +526,10 @@
     .formWrap {
         padding-top: 40px;
     }
+    .carBlk .owl-carousel .owl-stage {
+        display: flex;
+        justify-content: space-between;
+    }
 } 
 @media screen and (max-width:475px) { 
     .form-control{
@@ -608,6 +619,9 @@
         height: 60px;
         bottom: 130px;
     }
+    .carBlk .owl-carousel .owl-stage-outer {
+        padding: 0 34px;
+    }
 }
 @media screen and (max-width: 379px){
     .searchBarWrap .searchBar {
@@ -626,5 +640,8 @@
 }
 .flexMapheading{
     font-size: 30px !important;
+}
+.carBlk .owl-carousel .owl-stage-outer {
+    padding: 0 6px;
 }
 }

@@ -340,15 +340,38 @@ class Home extends React.Component {
                 <Fade left>
                   <hr className='hrLineTeam' />
                 </Fade>
-                {/* <div className='teamBody'>
-                  <OwlCarousel
+                <div className='teamBody'>
+                  {/* <OwlCarousel
                     className='owl-theme'
                     loop
                     margin={10}
                     // //   smartSpeed={750}
-                    // items={1}
+                    items={2}
                     dots={true}
+                    nav
                     responsive={this.state.team}>
+                    <div className='teamBodySec1'>
+                      <img src={teamImg} alt='teamImg' className='teamImg' />
+                      <div className='sec2'>
+                        <p className='name'>Name</p>
+                        <p className='des'>Designation</p>
+                        <p className='body'>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                    </div>
+                    <div className='teamBodySec1'>
+                      <img src={teamImg} alt='teamImg' className='teamImg' />
+                      <div className='sec2'>
+                        <p className='name'>Name</p>
+                        <p className='des'>Designation</p>
+                        <p className='body'>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                    </div>
                     <div className='teamBodySec1'>
                       <img src={teamImg} alt='teamImg' className='teamImg' />
                       <div className='sec2'>
@@ -372,8 +395,8 @@ class Home extends React.Component {
                         </p>
                       </div>
                     </div>
-                  </OwlCarousel>
-                </div> */}
+                  </OwlCarousel> */}
+                </div>
 
                 {/* <OwlCarousel
                     className='owl-theme'

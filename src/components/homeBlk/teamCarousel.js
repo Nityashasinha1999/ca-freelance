@@ -3,9 +3,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import OwlCarousel from "react-owl-carousel";
+
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import teamImg from "../../assets/images/teamImg.png";
+import { Col, Row } from "reactstrap";
 
 export default class apps extends React.Component {
   constructor(props) {
@@ -13,6 +15,7 @@ export default class apps extends React.Component {
     this.state = {
       open: false,
       modal: false,
+
       responsive: {
         0: {
           items: 1,
@@ -29,7 +32,7 @@ export default class apps extends React.Component {
         768: {
           items: 1,
 
-          loop: false,
+          loop: true,
         },
         999: {
           items: 1,
@@ -47,9 +50,9 @@ export default class apps extends React.Component {
         1399: {
           items: 2,
 
-          nav: false,
+          nav: true,
 
-          loop: true,
+          loop: false,
           dots: true,
         },
       },
@@ -78,30 +81,184 @@ export default class apps extends React.Component {
       //     <img src={teamImg} alt='teamImg' className='teamImg' />
       //   </div>
       // </OwlCarousel>
-      <div className='teamBody'>
-        <div className='teamBodySec1'>
-          <img src={teamImg} alt='teamImg' className='teamImg' />
-          <div className='sec2'>
-            <p className='name'>Name</p>
-            <p className='des'>Designation</p>
-            <p className='body'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-        </div>
+      <div className='carBlk'>
+        {/* <div className='teamBody'>
+          <div className='teamBodySec1'>
+            <img src={teamImg} alt='teamImg' className='teamImg' />
+            <div className='sec2'>
+              <p className='name'>Name</p>
+              <p className='des'>Designation</p>
+              <p className='body'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div> */}
 
-        <div className='teamBodySec1'>
-          <img src={teamImg} alt='teamImg' className='teamImg' />
-          <div className='sec2'>
-            <p className='name'>Name</p>
-            <p className='des'>Designation</p>
-            <p className='body'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+        {/* <div className='teamBodySec1'>
+            <img src={teamImg} alt='teamImg' className='teamImg' />
+            <div className='sec2'>
+              <p className='name'>Name</p>
+              <p className='des'>Designation</p>
+              <p className='body'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
           </div>
+        </div> */}
+        <div className='carBlk'>
+          <OwlCarousel
+            className='owl-theme'
+            margin={10}
+            // nav
+            items={2}
+            responsive={this.state.responsive}>
+            <div class='item'>
+              <div className='teamBodySec1'>
+                <img src={teamImg} alt='teamImg' className='teamImg' />
+                <div className='sec2'>
+                  <p className='name'>Name</p>
+                  <p className='des'>Designation</p>
+                  <p className='body'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class='item'>
+              <div className='teamBodySec1'>
+                <img src={teamImg} alt='teamImg' className='teamImg' />
+                <div className='sec2'>
+                  <p className='name'>Name</p>
+                  <p className='des'>Designation</p>
+                  <p className='body'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class='item'>
+              <div className='teamBodySec1'>
+                <img src={teamImg} alt='teamImg' className='teamImg' />
+                <div className='sec2'>
+                  <p className='name'>Name</p>
+                  <p className='des'>Designation</p>
+                  <p className='body'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class='item'>
+              <div className='teamBodySec1'>
+                <img src={teamImg} alt='teamImg' className='teamImg' />
+                <div className='sec2'>
+                  <p className='name'>Name</p>
+                  <p className='des'>Designation</p>
+                  <p className='body'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* <div class='item'>
+              <div className='teamBodySec1'>
+                <img src={teamImg} alt='teamImg' className='teamImg' />
+                <div className='sec2'>
+                  <p className='name'>Name</p>
+                  <p className='des'>Designation</p>
+                  <p className='body'>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div> */}
+          </OwlCarousel>
         </div>
+        {/* <Row className='justify-content-center align-items-center'>
+          <Col md={7} sm={12}>
+            <OwlCarousel
+              className='owl-theme'
+              loop={false}
+              margin={30}
+              nav={true}
+              items={2}
+              dots={false}
+              responsive={this.state.responsive}
+              nav>
+              <div className='fitness-element'>
+                <div className='item'>
+                  <div className='img-blk'></div>
+                  <div className='hover-show'>
+                    <div className=' d-flex align-items-center justify-content-end flex-column h-100'>
+                      <div className='text-center mb-3'>
+                        <img src={teamImg} alt='teamImg' className='teamImg' />
+                        <h4 className='text-white f-bold mb-2'>
+                          Alpha Academy Training Center
+                        </h4>
+                        <button className='btn btn-yellow'>View Gym</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='fitness-element'>
+                <div className='item'>
+                  <div className='img-blk'></div>
+                  <div className='hover-show'>
+                    <div className=' d-flex align-items-center justify-content-end flex-column h-100'>
+                      <div className='text-center mb-3'>
+                        <img src={teamImg} alt='teamImg' className='teamImg' />
+                        <h4 className='text-white f-bold mb-2'>
+                          Alpha Academy Training Center
+                        </h4>
+                        <button className='btn btn-yellow'>View Gym</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='fitness-element'>
+                <div className='item'>
+                  <div className='img-blk'></div>
+                  <div className='hover-show'>
+                    <div className=' d-flex align-items-center justify-content-end flex-column h-100'>
+                      <div className='text-center mb-3'>
+                        <img src={teamImg} alt='teamImg' className='teamImg' />
+                        <h4 className='text-white f-bold mb-2'>
+                          Alpha Academy Training Center
+                        </h4>
+                        <button className='btn btn-yellow'>View Gym</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='fitness-element'>
+                <div className='item'>
+                  <div className='img-blk'></div>
+                  <div className='hover-show'>
+                    <div className=' d-flex align-items-center justify-content-end flex-column h-100'>
+                      <div className='text-center mb-3'>
+                        <img src={teamImg} alt='teamImg' className='teamImg' />
+                        <h4 className='text-white f-bold mb-2'>
+                          Alpha Academy Training Center
+                        </h4>
+                        <button className='btn btn-yellow'>View Gym</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </OwlCarousel>
+          </Col>
+        </Row> */}
       </div>
     );
   }
